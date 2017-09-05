@@ -2,11 +2,13 @@
 % title 'Учимся Линукс. Новости.';
 <div class="block3-main center-block-main clearfix">
 % for my $row (@$list) {
-    <article>
-    	<img src="data:image/png;base64,<%= $row->[1] %>" alt="">
-        <h2><a href="<%= $row->[2] %>" target="_blank"><%= $row->[3] %></a></h2>
-        <p><%= $row->[4] %></p>
-    </article>
+    <div>
+        <article class="row">
+            <img src="data:image/png;base64,<%= $row->[1] %>" alt="">
+            <h2><a href="<%= $row->[2] %>" target="_blank"><%= $row->[3] %></a></h2>
+            <p><%= $row->[4] %></p>
+        </article>
+    </div>
 % }
 </div>
 
